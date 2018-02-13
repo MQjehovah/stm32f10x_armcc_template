@@ -1,0 +1,20 @@
+{
+    "author": "",
+    "dependencies": {},
+    "description": "",
+    "license": "",
+    "name": "",
+    "script": {
+        "make":"python tool/mqmake/mqmake.py -f build/mqmake/project.json",
+        "clean":"python tool/mqmake/mqmake.py -f build/mqmake/project.json -c",
+        "flash":"python tool/mqmake/mqmake.py -f build/mqmake/project.json -d",
+        "cm":"python tool/mqmake/mqmake.py -c && python tools/mqmake/mqmake.py",
+        "mf":"python tool/mqmake/mqmake.py && python tools/mqmake/mqmake.py -d",
+        "cmf":"python tool/mqmake/mqmake.py -c && python tools/mqmake/mqmake.py && python tools/mqmake/mqmake.py -d",
+        "shell":"cd tool && shell.exe -pCOM3",
+        "debug":"D:/gcc-arm-none-eabi-5_4/bin/arm-none-eabi-gdb.exe output/bootloader.elf",
+        "gdbserver":"\"C:/Program Files/SEGGER/JLink_V490/JLinkGDBServerCL.exe\"",
+        "test":"python tool/encode.py -p src/",
+        "test1":"python tool/AStyle/format.py -p src/"
+    }
+}

@@ -1,0 +1,71 @@
+{
+    "name": "project",
+    "version": "1.0.0",
+    "toolchain": {
+        "path": "D:/Keil5/ARM/ARMCC/bin/",
+        "prefix": "",
+        "as": "armasm",
+        "cc": "armcc",
+        "ld": "armlink",
+        "ar": "armar",
+        "objcopy": "fromelf",
+        "readelf": "readelf"
+    },
+    "flag": {
+        "cc": [
+            "--c99 --cpu Cortex-M3 -g -O0 --apcs=interwork ",
+            "-DSTM32F10X_MD -DUSE_STDPERIPH_DRIVER"
+        ],
+        "as": [
+            "--cpu Cortex-M3 -g --apcs=interwork",
+            "--xref"
+        ],
+        "ld": [
+            "--cpu Cortex-M3",
+            "--strict --scatter build/mqmake/project.sct",
+            "--summary_stderr --info summarysizes --map --xref --callgraph --symbols",
+            "--info sizes --info totals --info unused --info veneers  --list output/project.map"
+        ]
+    },
+    "output": {
+        "path": "output/",
+        "bin": true,
+        "hex": true
+    },
+    "include": [
+        "src/Driver/inc/",
+        "src/Startup/inc/",
+        "src/FWLib/inc/",
+        "src/User/inc/"
+    ],
+    "src": [
+        "src/FWLib/misc.c",
+        "src/FWLib/stm32f10x_adc.c",
+        "src/FWLib/stm32f10x_bkp.c",
+        "src/FWLib/stm32f10x_can.c",
+        "src/FWLib/stm32f10x_cec.c",
+        "src/FWLib/stm32f10x_crc.c",
+        "src/FWLib/stm32f10x_dac.c",
+        "src/FWLib/stm32f10x_dbgmcu.c",
+        "src/FWLib/stm32f10x_dma.c",
+        "src/FWLib/stm32f10x_exti.c",
+        "src/FWLib/stm32f10x_flash.c",
+        "src/FWLib/stm32f10x_fsmc.c",
+        "src/FWLib/stm32f10x_gpio.c",
+        "src/FWLib/stm32f10x_i2c.c",
+        "src/FWLib/stm32f10x_iwdg.c",
+        "src/FWLib/stm32f10x_pwr.c",
+        "src/FWLib/stm32f10x_rcc.c",
+        "src/FWLib/stm32f10x_rtc.c",
+        "src/FWLib/stm32f10x_sdio.c",
+        "src/FWLib/stm32f10x_spi.c",
+        "src/FWLib/stm32f10x_tim.c",
+        "src/FWLib/stm32f10x_usart.c",
+        "src/FWLib/stm32f10x_wwdg.c",
+        "src/Driver/*.c",
+        "src/Startup/core_cm3.c",
+        "src/Startup/system_stm32f10x.c",
+        "src/Startup/startup_stm32f10x_md.s",
+        "src/User/*.c"
+    ]
+}

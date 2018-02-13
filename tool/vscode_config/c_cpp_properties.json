@@ -1,0 +1,110 @@
+{
+    "configurations": [
+        {
+            "name": "Mac",
+            "includePath": [
+                "/usr/include",
+                "/usr/local/include",
+                "${workspaceRoot}"
+            ],
+            "defines": [],
+            "intelliSenseMode": "clang-x64",
+            "browse": {
+                "path": [
+                    "/usr/include",
+                    "/usr/local/include",
+                    "${workspaceRoot}"
+                ],
+                "limitSymbolsToIncludedHeaders": true,
+                "databaseFilename": ""
+            },
+            "macFrameworkPath": [
+                "/System/Library/Frameworks",
+                "/Library/Frameworks"
+            ]
+        },
+        {
+            "name": "Linux",
+            "includePath": [
+                "/usr/include",
+                "/usr/local/include",
+                "${workspaceRoot}"
+            ],
+            "defines": [],
+            "intelliSenseMode": "clang-x64",
+            "browse": {
+                "path": [
+                    "/usr/include",
+                    "/usr/local/include",
+                    "${workspaceRoot}"
+                ],
+                "limitSymbolsToIncludedHeaders": true,
+                "databaseFilename": ""
+            }
+        },
+        {
+            "name": "Win32",
+            "includePath": [
+                "${workspaceRoot}",
+                "${workspaceRoot}/src/App/inc",
+                "${workspaceRoot}/src/Driver/inc",
+                "${workspaceRoot}/src/FWLib/inc",
+                "${workspaceRoot}/src/Startup/inc",
+                "${workspaceRoot}/src/UCOSII/CONFIG",
+                "${workspaceRoot}/src/UCOSII/CORE",
+                "${workspaceRoot}/src/UCOSII/PORT",
+                "${workspaceRoot}/src/User/inc",
+                "D:/Soft/Keil5/ARM/ARMCC/include"                         
+                
+            ],
+            "defines": [
+                "__STDC__",
+                "__STDC_VERSION__=199409L",
+                "__EDG__",
+                "__EDG_VERSION__=407",
+                "__EDG_SIZE_TYPE__=unsigned int",
+                "__EDG_PTRDIFF_TYPE__=int",
+                "__sizeof_int=4",
+                "__sizeof_long=4",
+                "__sizeof_ptr=4",
+                "__ARMCC_VERSION=5050106",
+                "__TARGET_CPU_ARM7TDMI",
+                "__TARGET_FPU_SOFTVFP",
+                "__CC_ARM",
+                "__arm",
+                "__arm__",
+                "__TARGET_ARCH_4T=1",
+                "__TARGET_ARCH_ARM=4",
+                "__TARGET_ARCH_THUMB 1",
+                "__TARGET_ARCH_A64=0",
+                "__TARGET_ARCH_AARCH32=1",
+                "__TARGET_FEATURE_HALFWORD=1",
+                "__TARGET_FEATURE_THUMB=1",
+                "__TARGET_FEATURE_MULTIPLY=1",
+                "__TARGET_FEATURE_EXTENSION_REGISTER_COUNT 0",
+                "__a32__ 1",
+                "__SOFTFP__ 1",
+                "_DEBUG",
+                "UNICODE"
+            ],
+            "intelliSenseMode": "msvc-x64",
+            "browse": {
+                "path": [
+                    "${workspaceRoot}",
+                    "${workspaceRoot}/src/App/inc",
+                    "${workspaceRoot}/src/Driver/inc",
+                    "${workspaceRoot}/src/FWLib/inc",
+                    "${workspaceRoot}/src/Startup/inc",
+                    "${workspaceRoot}/src/UCOSII/CONFIG",
+                    "${workspaceRoot}/src/UCOSII/CORE",
+                    "${workspaceRoot}/src/UCOSII/PORT",
+                    "${workspaceRoot}/src/User/inc",
+                    "D:/Soft/Keil5/ARM/ARMCC/include"  
+                ],
+                "limitSymbolsToIncludedHeaders": true,
+                "databaseFilename": ""
+            }
+        }
+    ],
+    "version": 3
+}

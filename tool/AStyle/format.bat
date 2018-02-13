@@ -1,0 +1,1 @@
+for /r %%f in (*.cpp;*.c;*.h) do AStyle --style=ansi --delete-empty-lines -n %%f
